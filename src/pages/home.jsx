@@ -7,12 +7,13 @@ function Home() {
     <>
       <Hero />
       <Hr />
+      <div  className="bg-custom-F0EEED">
       <div className="grid gap-3 grid-cols-3 mx-20">
-        {cardData.map((card, idx) =>
-        <div key={idx} className="rounded-lg overflow-hidden shadow-lg flex flex-1 flex-col w-full">
+        {cardData.map((card, idx) => 
+        <div key={idx} className="overflow-hidden shadow-lg flex flex-1 flex-col w-full border border-gray-300 rounded-bl-2xl">
         <img
           className="w-full"
-          src={require(`../asset/card-top.jpg`)}
+          src={require(`../asset/${card.img}`)}
           alt="Sunset in the mountains"
         />
         <div className="px-6 py-4">
@@ -26,10 +27,9 @@ function Home() {
           </span>
         </div>
       </div>
-        
-        
         )}
       
+      </div>
       </div>
     </>
   );

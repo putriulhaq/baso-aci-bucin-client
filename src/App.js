@@ -4,6 +4,7 @@ import Footer from "./component/footer";
 import Home from "./pages/home";
 import About from "./pages/about";
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
+import Contact from "./pages/contact";
 
 function App() {
   const style = {
@@ -20,6 +21,7 @@ function App() {
             <Route index element={<Home />}></Route>
             <Route path="team" element={<About />}></Route>
             <Route path="home" element={<Home />}></Route>
+            <Route path="contact" element={<Contact />}></Route>
           </Route>
         </Routes>
         </div>

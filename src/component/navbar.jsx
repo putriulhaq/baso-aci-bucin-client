@@ -20,11 +20,6 @@ function Navbar() {
               </li>
               <li>
                 <a href="#" className={style.menu}>
-                  Company
-                </a>
-              </li>
-              <li>
-                <a href="#" className={style.menu}>
                   Branch
                 </a>
               </li>
@@ -32,9 +27,9 @@ function Navbar() {
                 <Link to="/team">Team</Link>
               </li>
               <li className={style.menu}>
-                {/* <Link to='/about'>
+                <Link to="/contact">
                   Contact
-                </Link> */}
+                </Link>
               </li>
             </ul>
           </div>
