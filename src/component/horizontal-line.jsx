@@ -6,11 +6,9 @@ function Hr(props) {
       {/* <span class="absolute px-3 font-medium text-gray-900 -translate-x-1/2 left-1/2 bg-custom-F0EEED dark:text-white dark:bg-gray-900">
         Menu
       </span> */}
-      <span>
       <h2 class="absolute mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
         {props.data}
       </h2>
-      </span>
     </div>
   );
 }
